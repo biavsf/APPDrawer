@@ -7,7 +7,7 @@
 ![Gradle](https://img.shields.io/badge/Build-Gradle-02303A?style=for-the-badge&logo=gradle)
 ![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow?style=for-the-badge)
 
-<img src="https://via.placeholder.com/1200x400?text=APPDrawer+Preview" alt="Preview do APPDrawer" width="100%" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPyt9o2vV7qbUzPXo1bet8BsmumaYMNWALTk29xdsx5A&s=10" alt="Preview do APPDrawer" width="100%" />
 
 </div>
 
