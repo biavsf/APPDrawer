@@ -1,21 +1,41 @@
 # APPDrawer
 
-Aplicativo Android em Kotlin com navegação por drawer lateral (navigation drawer), desenvolvido para demonstrar a utilização de Material Design, `DrawerLayout`, `Toolbar` e navegação entre opções do menu.
+<div align="center">
 
-## Visão geral
+![APPDrawer Banner](https://img.shields.io/badge/Android-Kotlin-3DDC84?style=for-the-badge&logo=android)
+![Material Design](https://img.shields.io/badge/Material%20Design-Drawer-FF6F61?style=for-the-badge)
+![Gradle](https://img.shields.io/badge/Build-Gradle-02303A?style=for-the-badge&logo=gradle)
+![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow?style=for-the-badge)
 
-O projeto `APPDrawer` é uma aplicação mobile simples, criada como exemplo de interface com menu lateral e conteúdo dinâmico. Ao abrir o app, o usuário visualiza uma `Toolbar` com ícone de menu e, ao clicar, o drawer lateral é exibido com opções como:
+<img src="https://via.placeholder.com/1200x400?text=APPDrawer+Preview" alt="Preview do APPDrawer" width="100%" />
 
-- Início
-- Configuração
-- Perfil
+</div>
 
-Ao selecionar um item do menu, o texto principal da tela é atualizado para refletir a opção escolhida.
+Aplicativo Android em Kotlin desenvolvido para demonstrar navegação lateral por drawer menu, com interface moderna e uso de componentes do Material Design. O projeto oferece uma experiência simples e funcional para apresentar telas de início, configuração e perfil em um único fluxo visual.
 
-Este projeto utiliza o ecossistema Android nativo e é estruturado em módulos padrão de um app Android com Gradle.
+---
 
-## Tecnologias usadas
+## ✨ Visão Geral
 
+O APPDrawer é uma aplicação mobile criada para praticar e demonstrar a estrutura básica de um app Android com navegação lateral. Ele contém uma `Toolbar` com botão de menu, um `DrawerLayout` com itens de navegação e uma área principal que atualiza o conteúdo conforme a opção selecionada.
+
+A aplicação foi construída com foco em aprendizado de:
+- UI em Android
+- Uso de `MaterialToolbar`
+- `DrawerLayout` e `NavigationView`
+- Atualização dinâmica de conteúdo em Kotlin
+
+---
+
+## 🧩 Tecnologias Utilizadas
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android)
+![Material3](https://img.shields.io/badge/Material%20Components-757575?style=flat-square)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle)
+![Jetpack](https://img.shields.io/badge/AndroidX-3DDC84?style=flat-square)
+
+### Stack principal
 - Kotlin
 - Android SDK
 - AndroidX
@@ -24,18 +44,20 @@ Este projeto utiliza o ecossistema Android nativo e é estruturado em módulos p
 - DrawerLayout
 - NavigationView
 - Gradle Kotlin DSL
-- Android Studio
 
-### Dependências principais
+---
 
-- `com.google.android.material:material:1.12.0`
-- `androidx.drawerlayout:drawerlayout:1.2.0`
-- `androidx.appcompat:appcompat`
-- `androidx.core:core-ktx`
-- `androidx.activity:activity`
-- `androidx.constraintlayout:constraintlayout`
+## 🚀 Funcionalidades
 
-## Estrutura do projeto
+- Menu lateral (drawer navigation)
+- Toolbar com ícone de menu para abrir o painel lateral
+- Opções de navegação: Início, Configuração e Perfil
+- Atualização dinâmica do texto principal da tela
+- Interface responsiva e intuitiva em estilo Material Design
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```text
 APPDrawer/
@@ -45,8 +67,10 @@ APPDrawer/
 │   │   │   ├── java/com/example/appdrawer/
 │   │   │   │   └── MainActivity.kt
 │   │   │   ├── res/
-│   │   │   │   ├── layout/activity_main.xml
-│   │   │   │   ├── menu/navigation_drawer.xml
+│   │   │   │   ├── layout/
+│   │   │   │   │   └── activity_main.xml
+│   │   │   │   ├── menu/
+│   │   │   │   │   └── navigation_drawer.xml
 │   │   │   │   └── values/
 │   │   │   └── AndroidManifest.xml
 │   │   ├── androidTest/
@@ -62,81 +86,111 @@ APPDrawer/
 ├── gradlew.bat
 ├── gradle.properties
 ├── .gitignore
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
-## Requisitos
+---
 
-Antes de executar o projeto, certifique-se de que você possui:
+## 🛠️ Requisitos
+
+Antes de executar o projeto, verifique se você possui:
 
 - Android Studio instalado
 - Android SDK configurado
-- JDK 17+ (recomendado para compatibilidade com versões recentes do AGP/Android Studio)
+- JDK 17 ou superior
 - Emulador Android ou dispositivo físico com depuração habilitada
 
-## Instalação
+---
 
-1. Clone o repositório:
+## ▶️ Como Executar
+
+### 1. Clone o repositório
 
 ```bash
 git clone https://github.com/biavsf/APPDrawer.git
 cd APPDrawer
 ```
 
-2. Abra o projeto no Android Studio.
+### 2. Abra o projeto no Android Studio
 
-3. Aguarde o Gradle sincronizar as dependências do projeto.
+- Abra o Android Studio
+- Selecione `Open an existing project`
+- Escolha a pasta do repositório clonado
 
-4. Se necessário, baixe o SDK Android solicitado pelo projeto.
+### 3. Sincronize o Gradle
 
-## Como executar
+O Android Studio irá baixar as dependências automaticamente. Caso necessário, clique em:
 
-### Opção 1: via Android Studio
+```bash
+Sync Project with Gradle Files
+```
 
-1. Abra o projeto no Android Studio.
-2. Selecione um emulador ou conecte um dispositivo Android.
-3. Clique em `Run` ou em `▶ Run 'app'`.
-4. A aplicação será instalada e iniciada no dispositivo/emulador.
+### 4. Execute a aplicação
 
-### Opção 2: via linha de comando
+Você pode rodar pelo Android Studio:
+- selecione um emulador ou um dispositivo conectado
+- clique em `Run` ou `Run 'app'`
 
-No diretório raiz do projeto, execute:
+Ou via terminal:
 
 ```bash
 ./gradlew assembleDebug
 ```
 
-Ou, para instalar e executar no dispositivo conectado/emulador:
+Para instalar e rodar no dispositivo conectado/emulador:
 
 ```bash
 ./gradlew installDebug
 ```
 
-## Funcionalidades
+---
 
-- Menu lateral com navegação por drawer
-- Toolbar com botão de abrir menu
-- Suporte a itens do menu: início, configuração e perfil
-- Atualização dinâmica do texto principal da tela conforme a opção selecionada
-- Interface em Material Design
+## 📷 Demonstração
 
-## Observações
+A aplicação apresenta uma interface com:
+- barra superior
+- botão de menu lateral
+- painel com opções de navegação
+- atualização do conteúdo da tela ao selecionar um item do menu
 
-Este projeto funciona como base para estudos de:
+> Demo/Deploy: Não possui no momento.
 
-- Layouts Android
-- Navegação em drawer
-- Uso de `MaterialToolbar`
-- Interação com `NavigationView`
-- Lógica de atualização de UI em Kotlin
+---
 
-## Licença
+## 📜 Licença
 
-Este projeto não informa uma licença específica no repositório. Caso precise usar ou redistribuir o código, verifique se há alguma política de uso conforme o contexto do projeto.
+Este projeto está disponível sob a licença MIT. Caso queira reutilizar ou adaptar o código, você pode usar este projeto como base para estudos, protótipos ou desenvolvimento pessoal.
 
-## Contribuição
+```md
+MIT License
 
-Contribuições são bem-vindas. Para enviar alterações:
+Copyright (c) 2026 APPDrawer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas. Se você quiser melhorar o projeto, siga os passos:
 
 ```bash
 git checkout -b feature/minha-melhoria
@@ -145,10 +199,25 @@ git commit -m "Adiciona melhoria no APPDrawer"
 git push origin feature/minha-melhoria
 ```
 
-## Autor
+Depois, abra um Pull Request para revisão.
 
-- biavsf
+---
 
-## Status do projeto
+## 👤 Autor
 
-Projeto em desenvolvimento/estudo, com foco em demonstração de navegação lateral em Android.
+- GitHub: [biavsf](https://github.com/biavsf)
+- Projeto: APPDrawer
+
+---
+
+## 📌 Status
+
+Status atual: em desenvolvimento / estudo de UI Android com drawer navigation.
+
+---
+
+Se quiser, eu também posso gerar uma versão:
+- mais elegante e premium
+- em inglês
+- com badges mais sofisticados
+- pronta para publicar no GitHub com aparência de projeto profissional
